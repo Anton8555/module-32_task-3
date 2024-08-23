@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message Company
+{
+    required int32 year = 1;  // год основания
+    required string legal_address = 2;  // юридический адрес
+    required string name = 3;  // название
+    optional string type_of_activity = 4;  // род деятельности
+    optional bool foreign_economic_activity = 5;  // осуществление внешнеэкономической деятельности
+};
